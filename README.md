@@ -1,0 +1,49 @@
+# SafeBase
+
+An easy-to-craft, almost transparent force field to protect your base!  Number per tribe configurable!
+
+## What It Does
+Adds a new engram for a modified Tek Shield that is immune to damage, does not require tek engrams, and does not burn fuel.  This is perfect for PvP servers that want to allow tribes to have a small base that is completely protected.
+
+## Features
+* Clean and completely stackable.
+* Shield max size is configurable.  Default max size is the same as a tek shield.
+* Configurable limit on number of shields per tribe.  Default is one.
+* Shield opacity is VERY low.  This means it won't look horrible in dark places, like the Aberration map.
+* The shield ignores babies!  Baby dinos will no longer be thrust out into oblivion.
+* Does not require access to tek.
+* Does not require fuel.
+
+## Configuration
+**ShieldSizeMult** :: Float. Multiplies the default tek shield size by this number.  Default is 1.0.
+**TribeLimit** :: Int.  Number of shields a tribe is allowed to have.  Default is 1.
+**Opacity** :: Float. The opacity of the shield.  Default is 0.1.  1 is 100% opacity (fully visible), 0 is 0% (completely invisible)
+
+```
+[SafeBase]
+ShieldSizeMult=1.0
+TribeLimit=1
+Opacity=0.1
+```
+
+## Technical Details
+**Mod ID**
+1235049753
+
+**Item Class**
+`SB_PrimalItemStructure_Shield_C`
+
+**Engram Class**
+`SB_EngramEntry_Shield_C`
+
+**Spawn Code**
+`cheat giveitem "Blueprint'/Game/Mods/SafeBase/Items/SB_PrimalItemStructure_Shield.SB_PerimalItemStructure_Shield'" 1 1 0`
+
+**Engram Override**
+`OverrideNamedEngramEntries=(EngramClassName="SB_EngramEntry_Shield_C",EngramLevelRequirement=0,EngramPointsCost=0,EngramHidden=False,RemoveEngramPreReq=False)`
+
+**Crafting Cost Override**
+`ConfigOverrideItemCraftingCosts=(ItemClassString="SB_PrimalItemStructure_Shield_C",BaseCraftingResourceRequirements=((ResourceItemTypeString="PrimalItemResource_Thatch_C",BaseResourceRequirement=1.0,bCraftingRequireExactResourceType=True)))`
+
+## Upcomin Features
+* Make opacity configurable in-game.  Define min and max values in ini config.
