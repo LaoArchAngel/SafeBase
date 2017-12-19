@@ -2,6 +2,9 @@
 
 An easy-to-craft, almost transparent force field to protect your base!  Number per tribe configurable!
 
+## Source
+http://steamcommunity.com/sharedfiles/filedetails/?id=1235049753
+
 ## What It Does
 Adds a new engram for a modified Tek Shield that is immune to damage, does not require tek engrams, and does not burn fuel.  This is perfect for PvP servers that want to allow tribes to have a small base that is completely protected.
 
