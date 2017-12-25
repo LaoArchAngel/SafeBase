@@ -46,11 +46,10 @@ Adds a new engram for a modified Tek Shield that is immune to damage, does not r
 [/list]
 [code]
 [SafeBase]
-  [SafeBase]
-  ShieldSizeMult=1.0
-  TribeLimit=1
-  MinOpacity=0.01
-  MaxOpacity=0.5
+ShieldSizeMult=1.0
+TribeLimit=1
+MinOpacity=0.01
+MaxOpacity=0.5
 [/code]
 
 [h1]Technical Details[/h1]
@@ -71,8 +70,3 @@ Adds a new engram for a modified Tek Shield that is immune to damage, does not r
 
 [b]Crafting Cost Override[/b]
 [code]ConfigOverrideItemCraftingCosts=(ItemClassString="SB_PrimalItemStructure_Shield_C",BaseCraftingResourceRequirements=((ResourceItemTypeString="PrimalItemResource_Thatch_C",BaseResourceRequirement=1.0,bCraftingRequireExactResourceType=True)))[/code]
-
-[h1]Upcomin Features[/h1]
-[list]
-[*] Make opacity configurable in-game.  Define min and max values in ini config.
-[/list]
