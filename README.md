@@ -18,35 +18,46 @@ Adds a new engram for a modified Tek Shield that is immune to damage, does not r
 * Does not require fuel.
 
 ## Configuration
-**ShieldSizeMult** :: Float. Multiplies the default tek shield size by this number.  Default is 1.0.
-**TribeLimit** :: Int.  Number of shields a tribe is allowed to have.  Default is 1.
-**Opacity** :: Float. The opacity of the shield.  Default is 0.1.  1 is 100% opacity (fully visible), 0 is 0% (completely invisible)
+* **ShieldSizeMult**
+  * Float
+  * Multiplies the default tek shield size by this number.
+  * Default is 1.0.
+* **TribeLimit**
+  * Integer
+  * Number of shields a tribe is allowed to have.
+  * Default is 1.
+* **MinOpacity**
+  * Float
+  * The minimum opacity players can set their shield. 1 is 100% opacity (fully visible), 0 is 0% (completely invisible).
+  * Default is 0.
+* **MaxOpacity**
+  * Float
+  * The maximum opacity players can set their shield. 1 is 100% opacity (fully visible), 0 is 0% (completely invisible).
+  * Default is 1.
 
 ```
 [SafeBase]
 ShieldSizeMult=1.0
 TribeLimit=1
-Opacity=0.1
+MinOpacity=0.01
+MaxOpacity=0.5
 ```
 
 ## Technical Details
-**Mod ID**
+##### Mod Id
 1235049753
 
-**Item Class**
+##### Item Class
 `SB_PrimalItemStructure_Shield_C`
 
-**Engram Class**
+##### Engram Class
 `SB_EngramEntry_Shield_C`
 
-**Spawn Code**
+##### Spawn Code
 `cheat giveitem "Blueprint'/Game/Mods/SafeBase/Items/SB_PrimalItemStructure_Shield.SB_PerimalItemStructure_Shield'" 1 1 0`
 
-**Engram Override**
+##### Engram Override
 `OverrideNamedEngramEntries=(EngramClassName="SB_EngramEntry_Shield_C",EngramLevelRequirement=0,EngramPointsCost=0,EngramHidden=False,RemoveEngramPreReq=False)`
 
-**Crafting Cost Override**
+##### Crafting Cost Override
 `ConfigOverrideItemCraftingCosts=(ItemClassString="SB_PrimalItemStructure_Shield_C",BaseCraftingResourceRequirements=((ResourceItemTypeString="PrimalItemResource_Thatch_C",BaseResourceRequirement=1.0,bCraftingRequireExactResourceType=True)))`
-
-## Upcomin Features
-* Make opacity configurable in-game.  Define min and max values in ini config.

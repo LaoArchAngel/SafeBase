@@ -18,14 +18,38 @@ Adds a new engram for a modified Tek Shield that is immune to damage, does not r
 [/list]
 
 [h1]Configuration[/h1]
-[b]ShieldSizeMult[/b] :: Float. Multiplies the default tek shield size by this number.  Default is 1.0.
-[b]TribeLimit[/b] :: Int.  Number of shields a tribe is allowed to have.  Default is 1.
-[b]Opacity[/b] :: Float. The opacity of the shield.  Default is 0.1.  1 is 100% opacity (fully visible), 0 is 0% (completely invisible)
+[list]
+[*] [b]ShieldSizeMult[/b]
+[list]
+  [*] Float
+  [*] Multiplies the default tek shield size by this number.
+  [*] Default is 1.0.
+[/list]
+[*] [b]TribeLimit[/b]
+[list]
+  [*] Integer
+  [*] Number of shields a tribe is allowed to have.
+  [*] Default is 1.
+[/list]
+[*] [b]MinOpacity[/b]
+[list]
+  [*] Float
+  [*] The minimum opacity players can set their shield. 1 is 100% opacity (fully visible), 0 is 0% (completely invisible).
+  [*] Default is 0.
+[/list]
+[*] [b]MaxOpacity[/b]
+[list]
+  [*] Float
+  [*] The maximum opacity players can set their shield. 1 is 100% opacity (fully visible), 0 is 0% (completely invisible).
+  [*] Default is 1.
+[/list]
+[/list]
 [code]
 [SafeBase]
 ShieldSizeMult=1.0
 TribeLimit=1
-Opacity=0.1
+MinOpacity=0.01
+MaxOpacity=0.5
 [/code]
 
 [h1]Technical Details[/h1]
@@ -46,8 +70,3 @@ Opacity=0.1
 
 [b]Crafting Cost Override[/b]
 [code]ConfigOverrideItemCraftingCosts=(ItemClassString="SB_PrimalItemStructure_Shield_C",BaseCraftingResourceRequirements=((ResourceItemTypeString="PrimalItemResource_Thatch_C",BaseResourceRequirement=1.0,bCraftingRequireExactResourceType=True)))[/code]
-
-[h1]Upcomin Features[/h1]
-[list]
-[*] Make opacity configurable in-game.  Define min and max values in ini config.
-[/list]
