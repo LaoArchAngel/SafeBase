@@ -3,7 +3,7 @@
 An easy-to-craft, almost transparent force field to protect your base!  Number per tribe configurable!
 
 ## Warning
-Please be arware, this is a fork of LaoArchAngel's SafeBase Mod for Ark! I just fixed a newly introduced bug (by ark itself / januar 2021) and I'm not a modder!
+Please be aware, this is a fork of LaoArchAngel's fantastic SafeBase Mod for Ark! I just fixed a newly introduced bug (by ark itself / januar 2021) and I'm not a modder!
 
 ## Source
 Origin: http://steamcommunity.com/sharedfiles/filedetails/?id=1235049753
