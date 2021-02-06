@@ -5,9 +5,9 @@ An easy-to-craft, almost transparent force field to protect your base!  Number p
 ## Warning
 Please be aware, this is a fork of LaoArchAngel's fantastic SafeBase Mod for Ark! I just fixed a newly introduced bug (by ark itself / januar 2021) and I'm not a modder! This mod will seamless replace the origin mod.
 
-## Steamworkshop
-Origin: http://steamcommunity.com/sharedfiles/filedetails/?id=1235049753
-Current: https://steamcommunity.com/sharedfiles/filedetails/?id=2386532930
+## Steam Workshop
+ * Origin: http://steamcommunity.com/sharedfiles/filedetails/?id=1235049753
+ * Current: https://steamcommunity.com/sharedfiles/filedetails/?id=2386532930
 
 ## What It Does
 Adds a new engram for a modified Tek Shield that is immune to damage, does not require tek engrams, and does not burn fuel.  This is perfect for PvP servers that want to allow tribes to have a small base that is completely protected.
