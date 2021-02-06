@@ -7,7 +7,7 @@ Please be arware, this is a fork of LaoArchAngel's SafeBase Mod for Ark! I just 
 
 ## Source
 Origin: http://steamcommunity.com/sharedfiles/filedetails/?id=1235049753
-Current: 
+Current: https://steamcommunity.com/sharedfiles/filedetails/?id=2363774483
 
 ## What It Does
 Adds a new engram for a modified Tek Shield that is immune to damage, does not require tek engrams, and does not burn fuel.  This is perfect for PvP servers that want to allow tribes to have a small base that is completely protected.
