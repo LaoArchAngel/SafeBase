@@ -58,7 +58,7 @@ MaxOpacity=0.5
 `SB_EngramEntry_Shield_C`
 
 ##### Spawn Code
-`cheat giveitem "Blueprint'/Game/Mods/SafeBase/Items/SB_PrimalItemStructure_Shield.SB_PerimalItemStructure_Shield'" 1 1 0`
+`cheat giveitem "Blueprint'/Game/Mods/SafeBase/Items/SB_PrimalItemStructure_Shield.SB_PrimalItemStructure_Shield'" 1 1 0`
 
 ##### Engram Override
 `OverrideNamedEngramEntries=(EngramClassName="SB_EngramEntry_Shield_C",EngramLevelRequirement=0,EngramPointsCost=0,EngramHidden=False,RemoveEngramPreReq=False)`
