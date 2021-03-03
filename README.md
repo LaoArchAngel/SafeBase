@@ -22,6 +22,7 @@ Adds a new engram for a modified Tek Shield that is immune to damage, does not r
 * Does not require fuel.
 
 ## Configuration
+
 * **ShieldSizeMult**
   * Float
   * Multiplies the default tek shield size by this number.
@@ -39,6 +40,7 @@ Adds a new engram for a modified Tek Shield that is immune to damage, does not r
   * The maximum opacity players can set their shield. 1 is 100% opacity (fully visible), 0 is 0% (completely invisible).
   * Default is 1.
 
+GameUserSettings.ini:
 ```
 [SafeBase]
 ShieldSizeMult=1.0
