@@ -34,7 +34,7 @@ Adds a new engram for a modified Tek Shield that is immune to damage, does not r
 * **MinOpacity**
   * Float
   * The minimum opacity players can set their shield. 1 is 100% opacity (fully visible), 0 is 0% (completely invisible).
-  * Default is 0.
+  * Default is 0; recommendation 0.5
 * **MaxOpacity**
   * Float
   * The maximum opacity players can set their shield. 1 is 100% opacity (fully visible), 0 is 0% (completely invisible).
@@ -45,8 +45,8 @@ GameUserSettings.ini:
 [SafeBase]
 ShieldSizeMult=1.0
 TribeLimit=1
-MinOpacity=0.01
-MaxOpacity=0.5
+MinOpacity=0.50
+MaxOpacity=0.80
 ```
 
 ## Technical Details
