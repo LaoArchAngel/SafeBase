@@ -21,6 +21,11 @@ Adds a new engram for a modified Tek Shield that is immune to damage, does not r
 * Does not require access to tek.
 * Does not require fuel.
 
+## Known Bugs
+* A Dino with massive damage (mostly from a mod like ARK Primal Fear) can bite through the shield. Solution: Don't use this kind of mod or atleast do not put the dino on the border of the shield. Will be not fixed!
+* Rockdrages can bug through the shield (its the same bug what can happen with the tek shield). Can not be fixed!
+* The shield is not visible or you cannot change the opacity. You have to add the configuration to your "GameUserSettings.ini", ingame modification are not working.
+
 ## Configuration
 
 * **ShieldSizeMult**
