@@ -72,3 +72,6 @@ MaxOpacity=0.80
 
 ##### Crafting Cost Override
 `ConfigOverrideItemCraftingCosts=(ItemClassString="SB_PrimalItemStructure_Shield_C",BaseCraftingResourceRequirements=((ResourceItemTypeString="PrimalItemResource_Thatch_C",BaseResourceRequirement=1.0,bCraftingRequireExactResourceType=True)))`
+
+##### Auto Unlock
+EngramEntryAutoUnlocks=(EngramClassName="B_EngramEntry_Shield_C",LevelToAutoUnlock=0)
