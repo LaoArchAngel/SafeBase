@@ -3,7 +3,7 @@
 An easy-to-craft, almost transparent force field to protect your base!  Number per tribe configurable!
 
 ☢ Warning
-Please be aware, this is a fork of LaoArchAngel's fantastic SafeBase Mod for Ark! Louis Bang Bang as fixed a newly introduced bug (by ark itself / januar 2021) This mod will seamless replace the origin mod.
+Please be aware, this is a fork of LaoArchAngel's fantastic SafeBase Mod for Ark! Louis Bang Bang as fixed a newly introduced bug (by ark itself / januar 2021) here https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fgithub.com%2FLotekHeavy%2FSafeBase This mod will seamless replace the origin mod.
 
 ★ Version 2.1
 Correction of the shield which lights up with an opacity of 0, now at 0.8 by default
