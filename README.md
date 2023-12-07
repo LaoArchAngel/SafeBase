@@ -16,7 +16,7 @@ Adds a new engram for a modified Tek Shield that is immune to damage, does not r
 * Clean and completely stackable.
 * Shield max size is configurable.  Default max size is the same as a tek shield.
 * Configurable limit on number of shields per tribe.  Default is one.
-* Shield opacity is VERY low.  This means it won't look horrible in dark places, like the Aberration map.
+* Shield opacity is adjustable to 0.1 at 1.0 This means it won't look horrible in dark places, like the Aberration map.
 * The shield ignores babies!  Baby dinos will no longer be thrust out into oblivion.
 * Does not require access to tek.
 * Does not require fuel.
@@ -24,7 +24,6 @@ Adds a new engram for a modified Tek Shield that is immune to damage, does not r
 ## Known Bugs
 * A Dino with massive damage (mostly from a mod like ARK Primal Fear) can bite through the shield. Solution: Don't use this kind of mod or atleast do not put the dino on the border of the shield. Will be not fixed!
 * Rockdrages can bug through the shield (its the same bug what can happen with the tek shield). Can not be fixed!
-* The shield is not visible or you cannot change the opacity. You have to add the configuration to your "GameUserSettings.ini", ingame modification are not working.
 
 ## Configuration
 
@@ -36,23 +35,21 @@ Adds a new engram for a modified Tek Shield that is immune to damage, does not r
   * Integer
   * Number of shields a tribe is allowed to have.
   * Default is 1.
-* **MinOpacity**
-  * Float
-  * The minimum opacity players can set their shield. 1 is 100% opacity (fully visible), 0 is 0% (completely invisible).
-  * Default is 0; recommendation 0.5
-* **MaxOpacity**
-  * Float
-  * The maximum opacity players can set their shield. 1 is 100% opacity (fully visible), 0 is 0% (completely invisible).
-  * Default is 1.
 
 GameUserSettings.ini:
 ```
 [SafeBase]
 ShieldSizeMult=1.0
 TribeLimit=1
+```
+## Version 2.1
+Correction of the shield which lights up with an opacity of 0, now at 0.8 by default
+Fixed crash when opening the opacity window
+Graphically reworked opacity window
+Removed in INI, no sense in keeping it configurable in the INI only adjustable ingame
 MinOpacity=0.50
 MaxOpacity=0.80
-```
+
 
 ## Technical Details
 ##### Mod Id
