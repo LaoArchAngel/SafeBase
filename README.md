@@ -7,7 +7,7 @@ An easy-to-craft, almost transparent force field to protect your base ! Number p
 ☢ Warning
 Please be aware, this is a fork of LaoArchAngel's fantastic SafeBase Mod for Ark! Louis Bang Bang as fixed a newly introduced bug (by ark itself / januar 2021) This mod will seamless replace the origin mod.
 
-[url=https://github.com/Olrik-WP/SafeBase] Code Source 2.1 [/url]
+https://github.com/Olrik-WP/SafeBase] Code Source 2.1
 
 ★ Version 2.2 - 08/12/2023
 
