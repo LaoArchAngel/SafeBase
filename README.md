@@ -32,6 +32,27 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2386532930
 ✔ Current 2.1 Updated by Deltawp:
 https://steamcommunity.com/sharedfiles/filedetails/?id=3107853072
 
+=======
+★ Version 2.1
+Correction of the shield which lights up with an opacity of 0, now at 0.8 by default
+Fixed crash when opening the opacity window
+Graphically reworked opacity window
+Section Removed in INI and not used in 2.1 version:
+MinOpacity=0.50
+MaxOpacity=0.80
+No sense in keeping it configurable in the INI. Variables as set in the code to 0.1 / 1.0, users don't need to worry about it
+
+✪ Steam Workshop
+
+✘ Origin:
+http://steamcommunity.com/sharedfiles/filedetails/?id=1235049753
+
+✘ 2.0 Updated by Louis Bang Bang:
+https://steamcommunity.com/sharedfiles/filedetails/?id=2386532930
+
+✔ Current 2.1 Updated by Deltawp:
+https://steamcommunity.com/sharedfiles/filedetails/?id=3107853072
+
 ☄ What It Does
 Adds a new engram for a modified Tek Shield that is immune to damage, does not require tek engrams, and does not burn fuel.  This is perfect for PvP servers that want to allow tribes to have a small base that is completely protected.
 
