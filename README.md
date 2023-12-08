@@ -1,18 +1,41 @@
-# SafeBase
+# SafeBase updated to 2.1
 
 An easy-to-craft, almost transparent force field to protect your base!  Number per tribe configurable!
 
-## Warning
-Please be aware, this is a fork of LaoArchAngel's fantastic SafeBase Mod for Ark! I just fixed a newly introduced bug (by ark itself / januar 2021) and I'm not a modder! This mod will seamless replace the origin mod.
+☢ Warning
+Please be aware, this is a fork of LaoArchAngel's fantastic SafeBase Mod for Ark! Louis Bang Bang as fixed a newly introduced bug (by ark itself / januar 2021) here https://github.com/LotekHeavy/SafeBase This mod will seamless replace the origin mod.
 
-## Steam Workshop
- * Origin: http://steamcommunity.com/sharedfiles/filedetails/?id=1235049753
- * Current: https://steamcommunity.com/sharedfiles/filedetails/?id=2386532930
+★ Version 2.2
+Feature request (Add some decay features) - Fuel option is better than decay...
+add tow option in the INI:
+UseFuel=1
+FuelConsumptionMultiplier=600.0
+with 600.0 Multiplier at shield radius 10x it consume 1 ressource of wood in 1 minute
 
-## What It Does
+★ Version 2.1
+Correction of the shield which lights up with an opacity of 0, now at 0.8 by default
+Fixed crash when opening the opacity window
+Graphically reworked opacity window
+Section Removed in INI and not used in 2.1 version:
+MinOpacity=0.50
+MaxOpacity=0.80
+No sense in keeping it configurable in the INI. Variables as set in the code to 0.1 / 1.0, users don't need to worry about it
+
+✪ Steam Workshop
+
+✘ Origin:
+http://steamcommunity.com/sharedfiles/filedetails/?id=1235049753
+
+✘ 2.0 Updated by Louis Bang Bang:
+https://steamcommunity.com/sharedfiles/filedetails/?id=2386532930
+
+✔ Current 2.1 Updated by Deltawp:
+https://steamcommunity.com/sharedfiles/filedetails/?id=3107853072
+
+☄ What It Does
 Adds a new engram for a modified Tek Shield that is immune to damage, does not require tek engrams, and does not burn fuel.  This is perfect for PvP servers that want to allow tribes to have a small base that is completely protected.
 
-## Features
+☛ Features
 * Clean and completely stackable.
 * Shield max size is configurable.  Default max size is the same as a tek shield.
 * Configurable limit on number of shields per tribe.  Default is one.
@@ -21,54 +44,58 @@ Adds a new engram for a modified Tek Shield that is immune to damage, does not r
 * Does not require access to tek.
 * Does not require fuel.
 
-## Known Bugs
+☠ Known Bugs
 * A Dino with massive damage (mostly from a mod like ARK Primal Fear) can bite through the shield. Solution: Don't use this kind of mod or atleast do not put the dino on the border of the shield. Will be not fixed!
 * Rockdrages can bug through the shield (its the same bug what can happen with the tek shield). Can not be fixed!
 
-## Configuration
+➤ Configuration
 
 * **ShieldSizeMult**
   * Float
   * Multiplies the default tek shield size by this number.
-  * Default is 1.0.
+  * Default is 1.0
 * **TribeLimit**
   * Integer
   * Number of shields a tribe is allowed to have.
-  * Default is 1.
+  * Default is 1
+
+ * **UseFuel**
+   * Integer
+   * shields use fuel or not
+   * Default is 0
+
+* **FuelConsumptionMultiplier**
+  * Float
+  * Only used if UseFuel is set to 1
+  * With 600.0 Multiplier at shield radius 10x it consume 1 ressource of wood in 1 minute
+  * Default is 600.0
 
 GameUserSettings.ini:
 ```
 [SafeBase]
 ShieldSizeMult=1.0
 TribeLimit=1
-```
-## Version 2.1
-Correction of the shield which lights up with an opacity of 0, now at 0.8 by default
-Fixed crash when opening the opacity window
-Graphically reworked opacity window
-Removed in INI, no sense in keeping it configurable in the INI only adjustable ingame
-MinOpacity=0.50
-MaxOpacity=0.80
-
-
-## Technical Details
+UseFuel=1
+FuelConsumptionMultiplier=600.0
+``
+☭ Technical Details
 ##### Mod Id
-2386532930
+3107853072
 
-##### Item Class
+☺ Item Class
 `SB_PrimalItemStructure_Shield_C`
 
-##### Engram Class
+☺ Engram Class
 `SB_EngramEntry_Shield_C`
 
-##### Spawn Code
+☺ Spawn Code
 `cheat giveitem "Blueprint'/Game/Mods/SafeBase/Items/SB_PrimalItemStructure_Shield.SB_PrimalItemStructure_Shield'" 1 1 0`
 
-##### Engram Override
+☺ Engram Override
 `OverrideNamedEngramEntries=(EngramClassName="SB_EngramEntry_Shield_C",EngramLevelRequirement=0,EngramPointsCost=0,EngramHidden=False,RemoveEngramPreReq=False)`
 
-##### Crafting Cost Override
+☺ Crafting Cost Override
 `ConfigOverrideItemCraftingCosts=(ItemClassString="SB_PrimalItemStructure_Shield_C",BaseCraftingResourceRequirements=((ResourceItemTypeString="PrimalItemResource_Thatch_C",BaseResourceRequirement=1.0,bCraftingRequireExactResourceType=True)))`
 
-##### Auto Unlock
+☺ Auto Unlock
 `EngramEntryAutoUnlocks=(EngramClassName="B_EngramEntry_Shield_C",LevelToAutoUnlock=0)`
